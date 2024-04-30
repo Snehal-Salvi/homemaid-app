@@ -1,0 +1,39 @@
+.footer {
+  background-color: rgb(255, 255, 255);
+  color: #7f7fe4;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);  
+}
+
+.appLogo{
+height: 30px;
+
+}
+
+.logoAndText {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footerText {
+    margin-top: 5px;  
+   
+  }
+
+
+.socialLinks {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+  }
+  
+  .socialLinks a {
+    color: #7f7fe4;
+    font-size: 20px;
+  }
+  

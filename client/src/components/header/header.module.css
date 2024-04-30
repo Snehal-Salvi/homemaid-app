@@ -1,0 +1,132 @@
+.appLogo{
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(230, 218, 218);
+    cursor: pointer;
+}
+
+.appLogo:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.891);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;  
+  height: 60px;
+  width: 100%;
+  background-color: #c3d4ff; 
+  box-shadow: 0px 2px 4px rgba(133, 132, 132, 0.891);
+  transition: top 0.3s; 
+
+}
+
+
+
+
+.appName{
+    font-weight: 900;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #292945;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+}
+
+.appName:hover{
+ font-size: 35px;
+  text-decoration: underline;
+}
+
+.navLink {
+  font-weight: bold;
+  color: #1b1670;
+  transition: color 0.3s ease;  
+}
+
+.navLink:hover {
+  text-decoration: underline; 
+  color: #7777c8;  
+  transition: color 0.3s ease;  
+}
+
+.navLink:focus {
+  text-decoration: underline; 
+  color: #7777c8; 
+}
+
+.loginButton {
+  color: #ffffff; 
+  font-weight: bold;
+  text-decoration: none; 
+  padding: 8px 16px; 
+  border: none; 
+  background-color: #1b1670; 
+  border-radius: 4px; 
+  transition: background-color 0.3s ease; 
+  margin: 5px;
+}
+
+.loginButton:hover {
+  background-color: #fffafa; 
+  border: 2px solid black;
+
+}
+
+
+
+.userDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(181, 162, 181);
+    width: 100px;
+    box-shadow: 0px 2px 4px rgba(21, 20, 20, 0.891);
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .userDetails img {
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  
+  .dropdownMenu {
+    background-color: rgb(132, 132, 136);
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdownMenu li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dropdownMenu li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .dropdownMenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .dropdownMenu a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+
+  
+
+
+
+
+

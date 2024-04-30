@@ -1,0 +1,185 @@
+ 
+
+.maidDetails {
+  padding: 10px;
+  background-color: #f7bce2;
+  margin: 25px;
+  border-radius: 10px;
+}
+
+ 
+
+.goBackButton {
+  display: inline-flex;
+  align-items: center;  
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.goBackButton .arrowIcon {
+  margin-right: 5px;  
+}
+
+.maidDetailsContainer {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.profileContainer {
+  position: relative;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.maidInfo {
+  margin-left: 20px;
+}
+
+.maidName {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #4e3085;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.maidDescription {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+  background-color: #38618e;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.maidRating {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: gold;
+  background-color: #fbfdff;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.ratingStars {
+  font-size: 20px;
+}
+
+.priceAndAvailability {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.maidPrice {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #faff5c;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.maidLocation {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #73f05d;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.maidAvailability {
+  font-size: 16px;
+  background-color: #bfff48;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.maidCategories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categoryBox {
+  background-color: #ffc107;  
+  color: #333;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.verificationBadge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-image: url('../../assets/verificationbadge.png');  
+  background-size: contain;  
+  position: absolute;
+  top: 15px;  
+  left: 155px; 
+  cursor: pointer;  
+}
+
+.verificationBadge:hover::after {
+  content: "Verified";
+  position: absolute;
+  top: 120%;  
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: gold;
+  color: rgb(0, 0, 0);  
+  font-weight: 900;
+  padding: 5px 10px;  
+  border-radius: 5px;  
+  font-size: 12px;  
+  white-space: nowrap;  
+}
+
+.bookMaidButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bookMaidButton:hover {
+  background-color: #218838;
+}
+
+ 
+@media (max-width: 768px) {
+  .maidDetailsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileContainer {
+    margin-bottom: 20px;
+  }
+
+  .maidInfo {
+    text-align: center;
+  }
+}

@@ -1,0 +1,142 @@
+.maidCard {
+    display: inline-flex;
+    text-decoration: none;
+    margin: 18px;
+    background-color: darkblue;
+  border-radius: 8px;
+  width: 300px;
+    height: 500px;
+   justify-content: center;
+    padding: 10px;
+    text-align: center; 
+    position: relative;
+    box-shadow: 0 4px 8px black; 
+}
+ 
+
+.maidCard:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+  }
+  
+
+
+
+.maidImageContainer {
+    position: relative;
+}
+
+.maidImage {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px black; 
+}
+
+.maidName{
+    height: 40px;
+    color: rgb(23, 23, 74);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #d7e2ee;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 15px;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5); 
+}
+
+.moreInfoIcon {
+    color: #007bff;  
+    margin-left: 5px;  
+   
+  }
+  
+
+.maidRating {
+    margin-top: 5px;
+}
+.ratingStars {
+    color: gold;  
+    font-size: 20px;  
+    margin: 10px;
+}
+
+
+.verificationBadge {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-image: url('../../assets/verificationbadge.png');  
+    background-size: contain;  
+    position: absolute;
+    top: 15px;  
+    left: 155px; 
+    cursor: pointer;  
+}
+
+.verificationBadge:hover::after {
+    content: "Verified";
+    position: absolute;
+    top: 120%;  
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gold;
+    color: rgb(0, 0, 0);  
+    font-weight: 900;
+    padding: 5px 10px;  
+    border-radius: 5px; 
+    font-size: 12px;  
+    white-space: nowrap;  
+}
+ 
+
+.maidServices {
+    margin-top: 15px;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-weight: bold;
+  }
+  
+  .categoryBox {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
+  
+  .maidServices p {
+    margin: 5px 0;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+  }
+  
+  .moreInfoIcon {
+    color: #007bff;
+    margin-left: 5px;
+    
+  }
+
+ 
+
+.bookingButton {
+    background-color: #28a745;  
+    color: #fff;  
+    border: none;  
+    padding: 10px 20px;  
+    border-radius: 6px;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease;  
+    margin: 20px;
+  }
+  
+  .bookingButton:hover {
+    background-color: #218838;  
+  }
+  
+  

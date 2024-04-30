@@ -1,0 +1,73 @@
+.formContainer {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.formTitle {
+  text-align: center;
+}
+
+.box {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.boxTitle {
+  margin-bottom: 10px;
+}
+
+.inputField {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.label {
+  flex: 1;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.input,
+.maidName,
+.maidPrice {
+  flex: 2;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.maidImage {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
+
+.submitButtonContainer {
+  margin-top: 20px;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}

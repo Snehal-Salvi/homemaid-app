@@ -1,0 +1,202 @@
+.mainContainer {
+    height: 82vh;
+    width: 100%;
+ 
+    padding: 20px;
+    display: flex;
+   
+  }
+  
+  .messageContainer {
+    height: 75vh;
+    width: 35vw;
+    margin-right: 20px;
+  }
+  
+  .messageBox  {
+    position: relative;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-image: url('../../assets/wallpaper.png');
+    background-size: contain;
+    box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.5);
+    height: 90px;
+    text-align: left;
+    font: 400 .9em 'Open Sans', sans-serif;
+    border: 1px solid #97a3ab;
+    border-radius: 10px;
+}
+
+.messageBox:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #c0d1c2;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    top: 0;
+    left: -15px;
+}
+
+.messageBox:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 17px solid #97a3ab;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    top: -1px;
+    left: -17px;
+}
+
+.messageBox:hover {
+    box-shadow: 0px 5px 5px black;
+    
+}
+
+.messageContent{
+    font-weight: 700;
+    color: rgb(97, 97, 159);
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.rightContainer {
+    position: relative;
+    height: 75vh;
+    width: 35vw;
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-image: url('../../assets/solution.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+}
+
+.overlayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    width: 400px;
+}
+
+.additionalInfoBox {
+    width: 25vw;
+    color: bisque;
+    height: fit-content;
+    margin-top: 350px;
+    margin-left: -320px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  
+  
+  .whatsappIcon {
+    color: green;
+  }
+  
+  .usersIcon {
+    color: blue;
+  }
+  
+  .starIcon {
+    color: gold;
+  }
+
+  aside {
+    margin: 10px 0;
+    line-height: 34px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  aside:hover {
+    top: -1px;
+  }
+  aside:active {
+    top: 1px;
+  }
+  aside:before, aside:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 0;
+  }
+  
+  aside.arrow {
+    background-color: #8D96ED;
+  }
+  aside.arrow:after, aside.arrow:before {
+    border-width: 17px 0 17px 17px;
+  }
+  aside.arrow:before {
+    border-color: #8D96ED transparent;
+    left: -17px;
+  }
+  aside.arrow:after {
+    border-color: transparent #8D96ED;
+    right: -17px;
+  }
+  
+ 
+
+@media only screen and (max-width: 768px) {
+    .mainContainer {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .messageContainer {
+        width: 100%;  
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+    
+    .messageBox {
+        height: auto;  
+        font-size: 16px; 
+    
+    }
+    
+  
+    
+    .rightContainer {
+        width: 100%;  
+        margin-top: 0;
+    }
+    
+    .backgroundImage {
+        border-radius: 50%;  
+    }
+    
+    .overlayText {
+        width: 100%;  
+        transform: translate(-50%, -50%);  
+    }
+
+    .additionalInfoBox {
+        width: 80%;
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+}
