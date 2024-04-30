@@ -9,11 +9,6 @@ import styles from "./BookingForm.module.css";
 
 /**
  * BookingForm component allows users to book a maid by providing their information, address details, and selecting booking date and time.
- * @param {Object} props - Component props
- * @param {string} props.maidName - Name of the maid
- * @param {number} props.maidPrice - Price of the maid's service
- * @param {string} props.maidImage - URL of the maid's image
- * @param {Function} props.onClose - Function to close the booking form modal
  */
 const BookingForm = ({ maidName, maidPrice, maidImage, onClose }) => {
   const [formData, setFormData] = useState({
@@ -65,7 +60,7 @@ const BookingForm = ({ maidName, maidPrice, maidImage, onClose }) => {
       if (response.error) {
         console.error("Error creating order:", response.error);
       } else {
-        console.log("Order created successfully:", response.data);
+    
   
         toast.success("Order created successfully");
         onClose();

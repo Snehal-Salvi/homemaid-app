@@ -11,6 +11,6 @@ router.route('/create').post(protect, createOrder);
 router.route('/user/:userId').get(protect, getOrdersByUserId);
 
 // Route to delete an order by order ID
-router.route('/:orderId').delete(protect, deleteOrder);
+router.route('/:orderId').delete(protect, deleteOrder); 
 
 export default router;

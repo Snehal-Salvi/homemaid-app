@@ -35,20 +35,19 @@ const MaidDetailsScreen = () => {
   // Toggle modal for booking maid
   const toggleModal = () => {
     if (userInfo) {
-      setIsModalOpen(prevState => !prevState);
+      setIsModalOpen(!isModalOpen);
     } else {
       toast.error('Please login first to book.');
     }
   };
 
- // Render maids once data is loaded
-return (
-  <div className={styles.maidDetails}>
-    {/* Link to go back to maids page */}
-    <Link to={'/maids'} className={styles.goBackButton}>
-      <FontAwesomeIcon icon={faArrowLeft} className={styles.arrowIcon} />
-      Go Back
-    </Link>
+  return (
+    <div className={styles.maidDetails}>
+      {/* Link to go back to maids page */}
+      <Link to={'/maids'} className={styles.goBackButton}>
+        <FontAwesomeIcon icon={faArrowLeft} className={styles.arrowIcon} />
+        Go Back
+      </Link>
 
       {/* Maid details */}
       <div className={styles.maidDetailsContainer}>

@@ -47,15 +47,12 @@ export default function MaidScreen() {
   // Show error message if there's an error fetching maids
   if (error) {
     toast.error(error?.data?.message || error?.error);
-    // Return or throw to exit the function
-    return null;
   }
 
   // Render maids once data is loaded
   return (
     <div>
-      {/* Check if `maids` is defined before mapping */}
-      {maids && maids.map((maid, i) => (
+      {maids.map((maid, i) => (
         <Maid key={i} maid={maid} />
       ))}
     </div>
