@@ -38,7 +38,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.get("/", (req, res) => {
-  res.send("Api is running...");
+  res.send("Api is running....");
 });
 
 app.use("/api/maids", maidRoutes);
