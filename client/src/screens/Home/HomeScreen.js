@@ -75,7 +75,7 @@ export default function HomeScreen() {
               </span>
             </div>
             {/* Link to login page */}
-            <Link to="/login" className={animationStyles.animatedButton}>
+            <Link to="/maids" className={animationStyles.animatedButton}>
               <span></span>
               <span></span>
               <span></span>

@@ -36,4 +36,8 @@ height: 30px;
     color: #7f7fe4;
     font-size: 20px;
   }
+
+  .socialLinks a:hover{
+    color: blue;
+  }
   

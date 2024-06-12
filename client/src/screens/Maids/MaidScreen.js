@@ -37,7 +37,7 @@ export default function MaidScreen() {
   // Fetch user data when component mounts
   useEffect(() => {
     getUser();
-  }, []);
+  }, []); 
 
   // Show loading spinner while fetching maids
   if (isLoading) {

@@ -112,7 +112,7 @@ const MyOrders = () => {
                         className={styles.deleteButton}
                         onClick={() => handleDeleteOrder(order._id)}
                       >
-                        <FontAwesomeIcon icon={faTrash} /> Delete
+                        <FontAwesomeIcon icon={faTrash} /> Cancel Order
                       </button>
                     </td>
                   </React.Fragment>
