@@ -2,6 +2,13 @@
 
 Welcome to the Maid Booking App! This web application allows users to easily book maids for various household chores. With a user-friendly interface and seamless booking process, managing household tasks has never been easier.
 
+## App Demo
+
+
+
+https://github.com/Snehal-Salvi/homemaid-app/assets/125987932/de197fb3-8e73-4478-ba3c-afcd86e7c12d
+
+
 ## Table of Contents
 
 - [Features](#features)
