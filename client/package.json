@@ -28,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://homemaid-app-backend-3o8p.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",

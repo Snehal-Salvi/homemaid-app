@@ -1,43 +1,32 @@
-import React from "react";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Maid from "../../components/maid/Maid";
-import { useGetMaidsQuery } from "../../slices/maidsApiSlice";
 import Spinner from "../../components/spinner/Spinner";
 import { toast } from "react-toastify";
-import { useDispatch } from "react-redux";
 import axios from "axios";
-import { BACKEND_URL } from "../../constants";
-import { setCredentials } from "../../slices/userSlice";
+import { BACKEND_URL } from "../../constants"; // Ensure this points to your backend URL
 
 export default function MaidScreen() {
-  const dispatch = useDispatch();
-  const { data: maids, isLoading, error } = useGetMaidsQuery();
+  const [maids, setMaids] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // Function to fetch user data from backend
-  const getUser = async () => {
+  // Function to fetch maids data from the backend
+  const fetchMaids = async () => {
     try {
-      // Send request to backend to check if user is authenticated
-      const res = await axios.get(`${BACKEND_URL}/auth/login/success`, {
-        withCredentials: true,
-      });
-      // Dispatch user credentials to Redux store if authenticated
-      dispatch(
-        setCredentials({
-          ...res.data.user._json,
-          _id: res.data._id,
-          isAdmin: res.data.user.isAdmin,
-        })
-      );
-    } catch (error) {
-      // Handle errors
-      toast.error(error?.data?.message || error?.error);
+      const response = await axios.get(`${BACKEND_URL}/api/maids`);
+      setMaids(response.data);
+    } catch (err) {
+      setError(err);
+      toast.error(err?.response?.data?.message || err.message);
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  // Fetch user data when component mounts
+  // Fetch maids data when component mounts
   useEffect(() => {
-    getUser();
-  }, []); 
+    fetchMaids();
+  }, []);
 
   // Show loading spinner while fetching maids
   if (isLoading) {
@@ -46,14 +35,19 @@ export default function MaidScreen() {
 
   // Show error message if there's an error fetching maids
   if (error) {
-    toast.error(error?.data?.message || error?.error);
+    return <p>Error loading maids. Please try again later.</p>;
+  }
+
+  // Check if maids data is valid before rendering
+  if (!maids || maids.length === 0) {
+    return <p>No maids available at the moment.</p>;
   }
 
   // Render maids once data is loaded
   return (
     <div>
       {maids.map((maid, i) => (
-        <Maid key={i} maid={maid} />
+        <Maid key={maid._id || i} maid={maid} />
       ))}
     </div>
   );
