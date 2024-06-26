@@ -1,5 +1,5 @@
 export const BASE_URL = ""
-export const BACKEND_URL = "http://localhost:5000"
+export const BACKEND_URL = "https://homemaid-app-backend-3o8p.onrender.com"
 export const MAIDS_URL = "/api/maids"
 export const USERS_URL = "/api/users"
 export const ORDERS_URL = "/api/orders"
